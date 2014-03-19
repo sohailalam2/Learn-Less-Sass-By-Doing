@@ -1,0 +1,17 @@
+/*
+ * LESS Operators lets us perform mathematical operations inside
+ * of the CSS styles.
+ */
+
+@myColor: #f00;
+@basePadding: 5px;
+@baseMargin: 5px;
+@baseThickness: 1px;
+
+#myDiv {
+  /* Notice how we can add colors even */
+  color: @myColor + #00f;
+  /* We can use braces and perform mathematical calculations too */
+  border: (@baseThickness + 11)/2 solid gray;
+  padding: @basePadding @basePadding + 15;
+}

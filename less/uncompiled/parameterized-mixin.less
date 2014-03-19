@@ -1,0 +1,50 @@
+/*
+ * Using LESS mixins with arguments
+ * Mixins can also be passed values as parameters.
+ * Mixin parameter can also be given a default value,
+ * in case if no value is passed.
+ */
+
+.border-radius(@radius: 10px) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -border-radius: @radius;
+}
+
+.myBorder(@color: black, @width: 1px) {
+  border: @width solid @color;
+}
+
+/* Notice how we can simply pass all the arguments using the @arguments shorthand */
+.box-shadow(@x: 0, @y: 0, @blur: 1px, @color: #000000) {
+  -moz-box-shadow: @arguments;
+  -webkitbox-shadow: @arguments;
+  -msbox-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+/*
+ * Notice mixins can also have parameters with no default values.
+ * Hence, it becomes mandatory to provide values to these parameters,
+ * while using such mixins
+ */
+.myDiv(@radius, @color, @width) {
+  padding: 10px;
+  margin: 10px;
+  .border-radius(@radius);
+  .myBorder(@color, @width);
+  .box-shadow(10px, 10px, 10px, gray);
+}
+
+#myDiv1 {
+  .myDiv(5px, blue, 2px);
+}
+
+#myDiv2 {
+  .myDiv(15px, red, 10px);
+}
+
+#myDiv3 {
+  .myDiv(1px, green, 5px);
+}

@@ -1,0 +1,34 @@
+/*
+ * LESS Variables are defined with an '@' character and
+ * can have different kinds of data type:
+ * color, string, boolean, multi-values
+ */
+
+@myVar1: green;
+// Can define named color value
+@myVar2: #0FAB99;
+// Can define hex color value
+@myVarString: "This String will be appended.";
+// Can define a String value
+@myVarFontSize: 20px;
+// Can define numeric value
+@myVarBorder: 2px solid @myVar2;
+// Can define multi-values
+@myVarPadding: 10px 10px 10px 10px;
+// Can define multi-values
+
+/* We can use the above defined variables in our LESS code as shown below */
+
+h1, h2 {
+  color: @myVar1;
+}
+
+div {
+  font-size: @myVarFontSize;
+  border: @myVarBorder;
+  padding: @myVarPadding;
+}
+
+div:after {
+  content: @myVarString;
+}

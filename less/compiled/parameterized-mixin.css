@@ -1,0 +1,41 @@
+#myDiv1 {
+    padding: 10px;
+    margin: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -border-radius: 5px;
+    border: 2px solid #00f;
+    -moz-box-shadow: 10px 10px 10px #808080;
+    -webkitbox-shadow: 10px 10px 10px #808080;
+    -msbox-shadow: 10px 10px 10px #808080;
+    box-shadow: 10px 10px 10px #808080
+}
+
+#myDiv2 {
+    padding: 10px;
+    margin: 10px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -border-radius: 15px;
+    border: 10px solid #f00;
+    -moz-box-shadow: 10px 10px 10px #808080;
+    -webkitbox-shadow: 10px 10px 10px #808080;
+    -msbox-shadow: 10px 10px 10px #808080;
+    box-shadow: 10px 10px 10px #808080
+}
+
+#myDiv3 {
+    padding: 10px;
+    margin: 10px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -border-radius: 1px;
+    border: 5px solid #008000;
+    -moz-box-shadow: 10px 10px 10px #808080;
+    -webkitbox-shadow: 10px 10px 10px #808080;
+    -msbox-shadow: 10px 10px 10px #808080;
+    box-shadow: 10px 10px 10px #808080
+}

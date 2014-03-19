@@ -1,0 +1,12 @@
+.content p {
+    color: darkgreen
+}
+
+.content a {
+    color: lightblue;
+    text-decoration: none
+}
+
+.content a:hover {
+    color: red
+}

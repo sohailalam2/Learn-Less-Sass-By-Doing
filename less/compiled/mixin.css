@@ -1,0 +1,29 @@
+.myMixin1 {
+    font-size: 20px;
+    color: #008000
+}
+
+.myDiv {
+    font-size: 20px;
+    color: #008000
+}
+
+.myBorder {
+    border-radius: 5px;
+    border: 1px dashed grey;
+    padding: 10px
+}
+
+header {
+    color: limegreen;
+    border-radius: 5px;
+    border: 1px dashed grey;
+    padding: 10px
+}
+
+footer {
+    color: goldenrod;
+    border-radius: 5px;
+    border: 1px dashed grey;
+    padding: 10px
+}

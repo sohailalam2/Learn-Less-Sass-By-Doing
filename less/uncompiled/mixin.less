@@ -1,0 +1,30 @@
+/*
+ * Mixins let you define common properties once,
+ * then reuse them later
+ */
+
+.myMixin1 {
+  font-size: 20px;
+  color: #008000;
+}
+
+/* Notice how we simply re-use the above defined code in here!! */
+.myDiv {
+  .myMixin1;
+}
+
+.myBorder {
+  border-radius: 5px;
+  border: 1px dashed grey;
+  padding: 10px;
+}
+
+header {
+  color: limegreen;
+  .myBorder; /* Using Mixin here */
+}
+
+footer {
+  color: goldenrod;
+  .myBorder; /* Using Mixin here */
+}

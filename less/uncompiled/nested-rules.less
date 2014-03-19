@@ -1,0 +1,28 @@
+/*
+ * LESS helps us write nested-rules which are much like
+ * nested DOM elements. This causes the nested rules to only
+ * apply within the outer rule's selector
+ */
+
+.content {
+
+  /*
+   * Notice that this paragraph tag is nested in the class content
+   * Only those paragraphs will be affected which are placed inside
+   * a div with class as content for example.
+  */
+  p {
+    color: darkgreen;
+  }
+
+  /* Similarly only the nested links (anchor tags) will be affected */
+  a {
+    color: lightblue;
+    text-decoration: none;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+}
