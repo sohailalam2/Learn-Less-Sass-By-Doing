@@ -1,0 +1,19 @@
+/*
+ * This LESS file imports all of the variables that are defined
+ * in import-me.less and uses it here
+ */
+@import "import-me.less";
+
+div {
+  color: @myColor1;
+}
+
+#myDiv1 {
+  font-size: @myFontSize;
+  border: @myThinBorder;
+  padding: @myPadding;
+}
+
+#myDiv1:after {
+  content: @myString;
+}

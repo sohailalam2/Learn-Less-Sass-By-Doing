@@ -1,0 +1,22 @@
+#myDiv1 {
+    color: #f00;
+    border-color: #900;
+    display: block;
+    border-width: 1px;
+    border-style: dashed;
+    padding: 15px
+}
+
+#myDiv2 {
+    color: #daa520;
+    border-color: #ae8319;
+    display: block;
+    border-width: 1px;
+    border-style: dashed;
+    padding: 15px
+}
+
+#myDiv3 {
+    color: #66f;
+    border-color: #009
+}

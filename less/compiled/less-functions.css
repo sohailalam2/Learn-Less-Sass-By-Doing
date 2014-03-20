@@ -1,0 +1,26 @@
+h1 {
+    color: #8b0000
+}
+
+h2 {
+    color: #f10000
+}
+
+h3 {
+    color: #ff2525
+}
+
+h4 {
+    color: #ff5858
+}
+
+#myDiv1 {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    border-color: #c76b6b;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px
+}

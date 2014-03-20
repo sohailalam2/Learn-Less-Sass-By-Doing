@@ -1,0 +1,15 @@
+#myDiv1 {
+    color: #ccc;
+    border: 2px dashed gray;
+    text-shadow: 1px 1px 0 #bfbfbf, 2px 2px 0 #b3b3b3, 3px 3px 0 #a6a6a6, 4px 4px 0 #999, 4px 4px 3px #ccc;
+    font-size: 30pt;
+    padding: 5pt
+}
+
+#myDiv2 {
+    color: #666;
+    border: 2px solid gray;
+    text-shadow: 1px 1px 0 #595959, 2px 2px 0 #4d4d4d, 3px 3px 0 #404040, 4px 4px 0 #333, 4px 4px 3px #000;
+    font-size: 30pt;
+    padding: 5pt
+}

@@ -1,0 +1,38 @@
+/*
+ * Using LESS pattern matching and guarded Mixins
+ */
+
+/*
+ * Notice the keyword 'when' - This is what makes it
+ * a guarded mixin and it will be applied only if the
+ * given guard(s) is(are) true.
+ * We can apply more guard as comma separated -
+ * when (X), (Y), ...
+ * NOTE: It will work as OR condition.
+ */
+.text3D(@color) when (lightness(@color) =< 50%) {
+  color: @color;
+  font-size: 30pt;
+  border: 2px solid gray;
+  text-shadow: 1px 1px 0px darken(@color, 5%), 2px 2px 0px darken(@color, 10%), 3px 3px 0px darken(@color, 15%), 4px 4px 0px darken(@color, 20%), 4px 4px 3px #000;
+}
+
+.text3D(@color) when (lightness(@color) > 50%) {
+  color: @color;
+  font-size: 30pt;
+  border: 2px dashed gray;
+  text-shadow: 1px 1px 0px darken(@color, 5%), 2px 2px 0px darken(@color, 10%), 3px 3px 0px darken(@color, 15%), 4px 4px 0px darken(@color, 20%), 4px 4px 3px #ccc;
+}
+
+.text3D(@_) {
+  font-size: 30pt;
+  padding: 5pt;
+}
+
+#myDiv1 {
+  .text3D(#ccc);
+}
+
+#myDiv2 {
+  .text3D(#666);
+}

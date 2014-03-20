@@ -1,0 +1,53 @@
+/*
+ * Using LESS Pattern Matching with Mixins
+*/
+
+.alert(warning) {
+  @color: goldenrod;
+  color: @color;
+  /* Notice the use of darken(...) LESS builtin function,
+     similarly there is a lighten(...) */
+  border-color: darken(@color, 10%);
+}
+
+.alert(error) {
+  @color: red;
+  color: @color;
+  border-color: darken(@color, 20%);
+}
+
+/*
+ * Notice the special @_ parameter - This means matches ALWAYS
+ * hence, it matches with both warning and error
+ */
+.alert(@_) {
+  display: block;
+  border-width: 1px;
+  border-style: dashed;
+  padding: 15px;
+}
+
+/*
+ * Notice the use of two parameters here -
+ * This shows matching with arity (functions signature)
+ * Notice that using this version will no longer match with
+ * .alert(@_) because of different function signature
+ */
+.alert(other, @color) {
+  color: lighten(@color, 20%);
+  border-color: darken(@color, 20%);
+}
+
+@type1: error;
+#myDiv1 {
+  .alert(@type1);
+}
+
+@type2: warning;
+#myDiv2 {
+  .alert(@type2);
+}
+
+#myDiv3 {
+  .alert(other, blue);
+}

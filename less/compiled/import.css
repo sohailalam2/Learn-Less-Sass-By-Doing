@@ -1,0 +1,13 @@
+div {
+    color: #8b0000
+}
+
+#myDiv1 {
+    font-size: 30px;
+    border: 4px solid #8b0000;
+    padding: 15px 15px 15px 35px
+}
+
+#myDiv1:after {
+    content: "This is imported String"
+}
