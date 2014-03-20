@@ -1,0 +1,58 @@
+/*
+ *                LESS Built in functions
+ *                =======================
+ *
+ * ---------------- Simple Color Functions ----------------
+ * lighten(color, amount)     darken(color, amount)
+ * saturate(color, amount)    desaturate(color, amount)
+ * fadein(color, amount)      fadeout(color, amount)
+ * fade(color, amount)        mix(color1, color2)
+ *
+ *
+ * ---------- Color Functions that return a value ----------
+ * hue(color)                 saturation(color)
+ * lightness(color)           alpha(color)
+ * grayscale(color)           complement(color)
+ * invert(color)
+ *
+ * --------------------- Math Functions --------------------
+ * round(number)              ceil(number)
+ * floor(number)              percentage(number)
+ * abs(number)                min(n1, n2, ...)
+ * max(n1, n2, ...)
+ */
+
+@mixin border-radius($radius: 5px) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/* Color Functions */
+$color: darkred;
+
+h1 {
+  color: grayscale(invert($color));
+}
+
+h2 {
+  color: lighten($color, 20%);
+}
+
+h3 {
+  color: lighten($color, 30%);
+}
+
+h4 {
+  color: lighten($color, 40%);
+}
+
+#myDiv1 {
+  @include border-radius();
+  /* Notice the use of hue() to extract the hue and applying it to hsl()*/
+  border-color: hsl(hue($color), 45%, 60%);
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+}

@@ -1,0 +1,23 @@
+/*
+ * Using SASS mixins with arguments
+ */
+/*
+ * Notice the keyword 'when' - This is what makes it
+ * a guarded mixin and it will be applied only if the
+ * given guard(s) is(are) true.
+ * We can apply more guard as comma separated -
+ * when (X), (Y), ...
+ * NOTE: It will work as OR condition.
+ */
+/* Notice the use of default values here */
+#myDiv1 {
+    border-width: 1px;
+    border-color: red;
+    border-style: solid;
+}
+
+#myDiv2 {
+    border-width: 1px;
+    border-color: blue;
+    border-style: dashed;
+}

@@ -1,0 +1,21 @@
+/*
+ * This LESS file imports all of the variables that are defined
+ * in import-me.less and uses it here
+ */
+/*
+ * This is a LESS file that contains variable definitions that can
+ * be imported into another style sheet using the @import directive
+ */
+div {
+    color: darkred;
+}
+
+#myDiv1 {
+    font-size: 30px;
+    border: 4px solid darkred;
+    padding: 15px 15px 15px 35px;
+}
+
+#myDiv1:after {
+    content: "This is imported String";
+}

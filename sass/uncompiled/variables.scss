@@ -1,0 +1,34 @@
+/*
+ * SASS variables are declared using a $ character
+ * and are defined like CSS values,
+ * variables can be one of six different types:
+ *
+ * numbers    Eg.   $myVar: .10in;
+ * strings    Eg.   $myVar: "Hello World";
+ * colors     Eg.   $myVar: blue;
+ * booleans   Eg.   $myVar: true;
+ * nulls      Eg.   $myVar: null;
+ * lists      Eg.   $myVar: 1px solid gray;
+ *
+ */
+
+$myColor1: blue;
+$myColor2: #000000;
+$myString: "Hello World from SASS";
+$myFontSize: 20px;
+$myThinBorder: 1px solid $myColor2;
+$myPadding: 10px;
+
+h1 {
+  color: $myColor1;
+}
+
+h2 {
+  font-size: $myFontSize;
+  border: $myThinBorder;
+  padding: $myPadding;
+}
+
+div:after {
+  content: $myString;
+}

@@ -1,0 +1,33 @@
+/*
+ * Using SASS mixins with arguments
+ */
+
+/*
+ * Notice the keyword 'when' - This is what makes it
+ * a guarded mixin and it will be applied only if the
+ * given guard(s) is(are) true.
+ * We can apply more guard as comma separated -
+ * when (X), (Y), ...
+ * NOTE: It will work as OR condition.
+ */
+@mixin myBorder($width, $color, $style) {
+  border: {
+    width: $width;
+    color: $color;
+    style: $style;
+  }
+;
+}
+
+/* Notice the use of default values here */
+@mixin myBorder2($width: 1px, $myColor: red, $style: solid) {
+  @include myBorder($width, $myColor, $style);
+}
+
+#myDiv1 {
+  @include myBorder2; // Uses the default values
+}
+
+#myDiv2 {
+  @include myBorder2(1px, blue, dashed);
+}

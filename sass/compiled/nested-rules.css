@@ -1,0 +1,14 @@
+/*
+ * SASS allows style rules to be nested inside of other rules.
+ */
+.content p {
+    color: red;
+}
+
+.content a {
+    color: cyan;
+}
+
+.content a:hover {
+    color: #0000ff;
+}

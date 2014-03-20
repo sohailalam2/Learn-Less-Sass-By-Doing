@@ -1,0 +1,13 @@
+/*
+ * LESS Operators lets us perform mathematical operations inside
+ * of the CSS styles.
+ */
+/* Notice SASS can do conditional logic too */
+#myDiv {
+    /* Notice how we can add colors even */
+    color: magenta;
+    /* We can use braces and perform mathematical calculations too */
+    border: 6px solid silver;
+    /* Notice that SASS knows it is 15 pixels */
+    padding: 5px 20px;
+}

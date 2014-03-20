@@ -1,0 +1,11 @@
+/*
+ * This is a LESS file that contains variable definitions that can
+ * be imported into another style sheet using the @import directive
+ */
+
+$myColor1: darkred;
+$myColor2: black;
+$myString: "This is imported String";
+$myFontSize: 30px;
+$myThinBorder: 4px solid $myColor1;
+$myPadding: 15px 15px 15px 35px;

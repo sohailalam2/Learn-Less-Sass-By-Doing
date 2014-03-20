@@ -1,0 +1,33 @@
+/*
+ * Mixins let us define common properties once,
+ * then re-use them. Unlike LESS, SASS requires
+ * the @mixin directive to work with mixins,
+ * and while using the mixin, we need to specify
+ * @include directive.
+ */
+@mixin myMixin1 {
+  font-size: 20px;
+  color: #008000;
+}
+
+/* Notice how we simply re-use the above defined code in here!! */
+.myDiv {
+  @include myMixin1;
+}
+
+@mixin myBorder {
+  border-radius: 5px;
+  border: 1px dashed grey;
+  padding: 10px;
+}
+
+header {
+  color: limegreen;
+  @include myBorder; /* Using Mixin here */
+}
+
+footer {
+  color: goldenrod;
+  @include myBorder; /* Using Mixin here */
+}
+
